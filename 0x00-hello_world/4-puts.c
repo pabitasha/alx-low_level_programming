@@ -1,6 +1,6 @@
-#inlude <stdio.h>
+#include <stdio.h>
 /**
- *main- it print out output using put 
+ *main -it print out output using put 
  *
  *return: always  (0)
  *
