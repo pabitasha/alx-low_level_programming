@@ -7,12 +7,19 @@
  * Return: `dest` edited string
  */
 char *_strncpy(char *dest, char *src, int n)
+{
+int a;
 
-for (i = 0; i < n && src[i] != '\0'; i++)
-dest[i] = src[i];
-
-for (; n > i; i++)
-dest[i] = '\0';
-
+a = 0;
+while (a < n && src[a] != '\0')
+{
+dest[a] = src[a];
+a++;
+}
+while (a < n)
+{
+dest[a] = '/0';
+a++;
+}
 return (dest);
 }
