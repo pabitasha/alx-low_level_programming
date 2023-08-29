@@ -9,7 +9,7 @@ void print_diagsums(int *a, int size)
 {
 	int x, sum, sizeSum;
 
-	i = 0;
+	x = 0;
 	sum = 0;
 	sizeSum = size * size;
 	while (x < sizeSum)
