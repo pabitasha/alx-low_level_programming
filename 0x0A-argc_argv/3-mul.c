@@ -18,7 +18,7 @@ return (0);
 }
 firstNum = atoi(argv[1]);
 seconfNum = atoi(argv[2]);
-product_Sum = firstNum *secondSum;
+product = firstNum * secondSum;
 
 printf("%d\n", product);
 
