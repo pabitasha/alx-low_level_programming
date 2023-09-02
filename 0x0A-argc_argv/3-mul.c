@@ -10,18 +10,17 @@
  */
 int main(int argc, char *argv[])
 {
-int first_Num, second_Num, product_Sum;
-
-if (argc != 3)
+int firstNum, secondNum, product;
+if (argc < 3 || argc > 3)
 {
 printf("Error\n");
-return (1);
+return (0);
 }
-first_Num = atoi(argv[1]);
-seconf_Num = atoi(argv[2]);
-product_Sum = first_Num *second_Sum;
+firstNum = atoi(argv[1]);
+seconfNum = atoi(argv[2]);
+product_Sum = firstNum *secondSum;
 
-printf("%d\n", product_Sum);
+printf("%d\n", product);
 
 return (0);
 }
