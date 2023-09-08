@@ -8,11 +8,11 @@
  */
 int _strlen(char *string)
 {
-	int a;
+int a;
 
-	for (a = 0; string[a] != '\0'; a++)
+for (a = 0; string[a] != '\0'; a++)
 
-	return (a);
+return (a);
 }
 /**
  * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
@@ -23,31 +23,30 @@ int _strlen(char *string)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *pnt;
-	int num, leng, x, y;
+char *pnt;
+int num, leng, x, y;
 
-	num = n;
+num = n;
 
-	if (s1 == NULL) /* account for NULL strings */
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	if (num < 0) /* account for negative n bytes */
-		return (NULL);
-	if (num >= _strlen(s2)) /* account for n too big */
-		num = _strlen(s2);
+if (s1 == NULL) /* account for NULL strings */
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+if (num < 0) /* account for negative n bytes */
+return (NULL);
+if (num >= _strlen(s2)) /* account for n too big */
+num = _strlen(s2);
 
-	leng = _strlen(s1) + num + 1; /* +1 to account for null pointer */
+leng = _strlen(s1) + num + 1; /* +1 to account for null pointer */
+pnt = malloc(sizeof(*pnt) * leng); /* malloc and check for error */
+if (pnt == NULL;
+return (NULL);
 
-	pnt = malloc(sizeof(*pnt) * leng); /* malloc and check for error */
-	if (pnt == NULL)
-		return (NULL);
+for (x = 0; s1[x] != '\0'; x++) /* concat */
+pnt[x] = s1[x];
+for (y = 0; y < num; y++)
+pnt[x + y] = s2[y];
+pnt[x + y] = '\0';
 
-	for (x = 0; s1[x] != '\0'; x++) /* concat */
-		pnt[x] = s1[x];
-	for (y = 0; y < num; y++)
-		pnt[x + y] = s2[y];
-	pnt[x + y] = '\0';
-
-	return (pnt);
+return (pnt);
 }
