@@ -28,7 +28,7 @@ for (node = 0; node < (index - 1); node++)
 if (copy_n->next == NULL)
 return (-1);
 
-copy = copy->next;
+copy_n = copy_n->next;
 }
 
 tempo = copy_n->next;
