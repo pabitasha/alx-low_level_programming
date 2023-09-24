@@ -16,7 +16,7 @@ if (tempo == NULL)
 return (0);
 
 *head = tempo->next;
-n = temp->n;
+n = tempo->n;
 free(tempo);
 return (n);
 }
