@@ -40,13 +40,13 @@ size_t print_listint_safe(const listint_t *head)
 		new_node = malloc(sizeof(listp_t));
 
 		if (new_node == NULL)
-		{
+		
 			exit(98);
 		
 		new_node->p = (void *)head;
 		new_node->next = hpt;
 		hpt = new_node;
-		}
+		
 		sum = hpt;
 
 		while (sum->next != NULL)
@@ -66,4 +66,5 @@ size_t print_listint_safe(const listint_t *head)
 	}
 
 	free_listp(&hpt);
+	return (nnodes);
 }
